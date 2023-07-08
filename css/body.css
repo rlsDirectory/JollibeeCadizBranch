@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/jollibee-bg.jpg) no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/images/jollibee-bg.jpg) no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -191,8 +191,9 @@ body {
         position: absolute;
         top: 2500px;
     }
-    .upper-menubar-buttons {
-        display: none;
+    .upper-menubar-wrapper {
+        display: flex;
+        flex-direction: column;
     }
     .middle-logo-wrapper img {
         width: 200px;
@@ -206,6 +207,12 @@ body {
     }
     .middlebranchpic-wrapper img {
         width: 200px;
+    }
+}
+@media screen and (max-width: 412px) {
+    .middlebranchextra-container {
+        margin: 100px 0 0 0;
+        height: 500px;
     }
 }
 @media screen and (max-width: 404px) {
